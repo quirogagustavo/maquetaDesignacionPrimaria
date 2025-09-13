@@ -1,0 +1,270 @@
+/* General Body and Layout */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-color {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.main-header h1 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.main-header h1 strong {
+    font-weight: 700;
+}
+
+.user-button {
+    background-color: #fff;
+    border: 1px solid #ff8c00;
+    color: #ff8c00;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.content-area {
+    display: flex;
+    padding: 20px;
+}
+
+.main-details {
+    flex-grow: 1;
+    padding-right: 20px;
+}
+
+.right-sidebar {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+/* Action Tabs */
+.action-tabs {
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.tab-button.active {
+    background-color: #ff8c00;
+    color: white;
+    border-color: #ff8c00;
+}
+
+/* Form Sections & Cards */
+.form-section {
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.section-title .icon {
+    margin-right: 8px;
+    color: #ff8c00;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.sector {
+    float: right;
+    color: #777;
+}
+
+.card table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.card th, .card td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.card th {
+    color: #555;
+}
+
+/* Validation Section */
+.validation-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.validation-grid input, .validation-grid select, .validation-grid button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.validate-button {
+    background-color: #fff;
+    border: 1px solid #ff8c00;
+    color: #ff8c00;
+    cursor: pointer;
+}
+
+/* Signature Section */
+.signature-area {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.signature-box {
+    border-top: 1px solid #333;
+    padding-top: 5px;
+    text-align: center;
+    width: 200px;
+}
+
+/* Back Link */
+.back-link {
+    display: inline-block;
+    margin: 20px 0;
+    color: #ff8c00;
+    text-decoration: none;
+}
+
+/* Timeline */
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.step {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    position: relative;
+    flex: 1;
+}
+
+.step::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #ccc;
+    margin: 0 auto 5px;
+}
+
+.step.completed::before {
+    background-color: #ff8c00;
+    border-color: #ff8c00;
+    content: '✓';
+    color: white;
+    line-height: 20px;
+}
+
+/* History Log */
+.history-log .history-item {
+    border-left: 3px solid #ff8c00;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.history-item p {
+    margin: 0;
+}
+
+/* Right Sidebar */
+.sidebar-section {
+    background-color: #ffecd9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.sidebar-section h4 {
+    margin-top: 0;
+    border-bottom: 1px solid #ffc98a;
+    padding-bottom: 10px;
+}
+
+.sidebar-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-section ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 0;
+}
+
+.sidebar-button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ff8c00;
+    background-color: #ff8c00;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sidebar-button.full-width {
+    display: block;
+}
+
+.sidebar-button.disabled {
+    background-color: #e0e0e0;
+    border-color: #ccc;
+    color: #999;
+    cursor: not-allowed;
+}

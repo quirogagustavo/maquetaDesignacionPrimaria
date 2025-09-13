@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.document-container {
+    width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.doc-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.doc-header h2 {
+    background-color: #e0e0e0;
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+.doc-header h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.info-section {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.info-section p {
+    margin: 4px 0;
+}
+
+.table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.table-section th, .table-section td {
+    border: 1px solid #000;
+    padding: 5px;
+    text-align: center;
+}
+
+.table-section th {
+    background-color: #f2f2f2;
+}
+
+.highlight {
+    background-color: #fff3cd;
+}
+
+.resolution-section {
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.resolution-section h4 {
+    text-decoration: underline;
+}
+
+.doc-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+
+.signature-stamp img {
+    width: 180px;
+}
+
+.page-number {
+    font-size: 12px;
+}
