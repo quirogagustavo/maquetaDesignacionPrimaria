@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.caratula-container {
+  width: 800px;
+  margin: 20px auto;
+  padding: 40px;
+  border: 1px solid #000;
+  background-color: #fff;
+  position: relative;
+}
+
+.caratula-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.caratula-header .escudo {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.caratula-header h1 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.caratula-subheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.caratula-subheader .logo-gob {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.caratula-subheader .logo-gob span {
+  font-size: 14px;
+  display: block;
+  letter-spacing: 1px;
+}
+
+.caratula-subheader .ministerio {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.year {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cgp-stamp {
+  position: absolute;
+  top: 150px;
+  right: 80px;
+  border: 3px solid #000;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.cgp-stamp h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  border-bottom: 2px solid #000;
+  padding-bottom: 2px;
+}
+
+.cgp-stamp p {
+  font-size: 10px;
+  margin: 2px 0 0 0;
+}
+
+.info-section {
+  margin-bottom: 10px;
+}
+
+.info-box {
+  border: 1px solid #000;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.info-box-split {
+  display: flex;
+  gap: 5px;
+}
+
+.info-box-split .info-box {
+  width: 50%;
+}
+
+.info-box label {
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+}
+
+.info-box p {
+  font-size: 14px;
+  margin: 5px 0 0 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.iniciador-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.iniciador-details p {
+  margin-top: 2px;
+}
+
+.footer-notes {
+  margin-top: 30px;
+  text-align: right;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+}

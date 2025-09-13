@@ -26,3 +26,58 @@ body {
     border-radius: 3px;
     border: 1px solid #e0a800;
 }
+/* Estilos para la paginación del expediente */
+.pagination-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pagination-nav button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 15px;
+}
+
+.pagination-nav button:disabled {
+    background-color: #444;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.pagination-nav button:hover:not(:disabled) {
+    background-color: #007bff;
+}
+
+#page-counter {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* Ajuste para que el contenido no quede debajo de la barra */
+body {
+    padding-top: 60px;
+}
+
+/* Ocultar todas las fojas por defecto */
+.document-wrapper {
+    display: none;
+}
+
+/* Mostrar solo la foja activa */
+.document-wrapper.active {
+    display: block;
+}
