@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .login-container {
+            max-width: 350px;
+            margin: 80px auto;
+            padding: 30px;
+            background: #fff3e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(255,152,0,0.15);
+            border: 2px solid #ff9800;
+        }
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff9800;
+        }
+        .login-container label {
+            display: block;
+            margin-bottom: 8px;
+            color: #e68900;
+            font-weight: bold;
+        }
+        .login-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ff9800;
+            background: #fff;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+            background: #ff9800;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.2s;
+        }
+        .login-container button:hover {
+            background: #e68900;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Iniciar sesión</h2>
+        <form id="loginForm">
+            <label for="usuario">Usuario:</label>
+            <select id="usuario" name="usuario">
+                <option value="interinatos">Interinatos</option>
+                <option value="personaldocente">Personal Docente</option>
+            </select>
+            <button type="submit">Ingresar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

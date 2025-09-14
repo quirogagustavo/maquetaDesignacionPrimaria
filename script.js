@@ -27,4 +27,18 @@ document.addEventListener('DOMContentLoaded', function() {
             modal.style.display = "none";
         }
     }
+
+        // Lógica de login simple
+        var loginForm = document.getElementById('loginForm');
+        if (loginForm) {
+            loginForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                var usuario = document.getElementById('usuario').value;
+                if (usuario === 'interinatos') {
+                    window.location.href = 'index.html';
+                } else if (usuario === 'personaldocente') {
+                    window.location.href = 'personalDocente.html';
+                }
+            });
+        }
 });
