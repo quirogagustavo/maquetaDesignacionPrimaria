@@ -20,52 +20,104 @@
         </header>
 
         <div class="content-area">
-            <main class="main-details">
-                <div class="action-tabs">
-                    <a href="aspirantes.html" target="_blank" class="tab-button">Listado de aspirantes</a>
-                    <button class="tab-button active">Listado Junta Clasificación Docente</button>
-                    <button class="tab-button">Declaración Jurada</button>
+
+            <div style="display: flex; align-items: flex-start;">
+                <div style="flex: 1;">
+                    <main class="main-details">
+                        <div class="action-tabs">
+                            <a href="aspirantes.html" target="_blank" class="tab-button">Listado de aspirantes</a>
+                            <button class="tab-button active">Listado Junta Clasificación Docente</button>
+                            <!-- <button class="tab-button">Declaración Jurada</button> -->
+                        </div>
+                        <div class="form-section">
+                            <h3 class="section-title"><span class="icon">&#x1F3E2;</span> Datos de la Unidad Educativa</h3>
+                            <div class="card">
+                                <p><strong>Establecimiento:</strong> ESCUELA TEC. CAP. LAB MADRES SANJUANINAS <span class="sector">Sector N° 503</span></p>
+                                <p><strong>Nivel:</strong> No Formal</p>
+                                <p><strong>Modalidad:</strong> Capacitación Laboral</p>
+                                <p><strong>CUE:</strong> 700072300</p>
+                                <p><strong>Radio:</strong> 2</p>
+                                <p><strong>Domicilio:</strong> Raúl Cuello 4569 (E)</p>
+                                <p><strong>Localidad:</strong> Barrio Balcarce, Santa Lucía, San Juan</p>
+                            </div>
+                        </div>
+                        <div class="form-section">
+                            <h3 class="section-title"><span class="icon">&#x1F4C1;</span> Datos de la designación</h3>
+                            <div class="card">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>CUPOF</th>
+                                            <th>Descripción del cargo</th>
+                                            <th>Categoría</th>
+                                            <th>En reemplazo de: Agentes</th>
+                                            <th>S. de revistas</th>
+                                            <th>Motivo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>700072300-MPI-10082410393962</td>
+                                            <td>Maestro de Enseñanza Práctica - Escuelas Técnicas de Capacitación Laboral - INGLES Turno: VESPERTINO</td>
+                                            <td>125</td>
+                                            <td>MERINO, NDIA LUCY<br>Género: Femenino<br>DU: 17078997</td>
+                                            <td>TITULAR</td>
+                                            <td>BAJA POR JUBILACION originada por EXPEDIENTE 300-005787-2023-EXP, la cual se adjunta</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- ...resto del contenido principal... -->
+                    </main>
                 </div>
+                <aside class="right-sidebar" style="margin-left: 20px; min-width: 280px; max-width: 320px;">
+                    <div class="sidebar-section">
+                        <h4>Ver documentos</h4>
+                        <ul>
+                            <li><a href="#" onclick="openDocModal('solicitud.html', 'Solicitud de designación')">Solicitud de designación</a></li>
+                            <li><a href="#" onclick="openDocModal('llamado.html', 'Llamado de prensa')">Llamado de prensa</a></li>
+                            <li><a href="#" onclick="openDocModal('ofrecimiento.html', 'Acto de Ofrecimiento')">Acto de Ofrecimiento</a></li>
+                            <li><a href="#" onclick="openDocModal('instancia_titulo.html', 'Instancia de Título')">Instancia de Título</a></li>
+                            <li><a href="#" onclick="openDocModal('declaracion_jurada.html', 'Declaración Jurada')">Declaración Jurada</a></li>
+                            <li><a href="#" onclick="openDocModal('motivo_designacion.html', 'Motivo Designación')">Motivo Designación</a></li>
+                            <li><a href="#" onclick="openDocModal('img/dniFrente.jpeg', 'DNI')">DNI</a></li>
+                            <li><a href="#" onclick="openDocModal('img/cuil.png', 'CUIL')">CUIL</a></li>
+                            <li><a href="#" onclick="openModal('cbuModal')">CBU</a></li>
+                            <li><a href="#" onclick="openModal('gananciasModal')">Notificación Circular Impuesto a las Ganancias</a></li>
+    <!-- Modal para Notificación Circular Impuesto a las Ganancias -->
+    <div id="gananciasModal" class="modal" style="z-index:1001;">
+        <div class="modal-content" style="max-width:900px;">
+            <span class="close" onclick="closeModal('gananciasModal')">&times;</span>
+            <img src="img/ganancias.png" alt="Notificación Circular Impuesto a las Ganancias" style="max-width:850px; width:100%; margin:10px; border:1px solid #ccc; border-radius:8px;">
+        </div>
+    </div>
+                        </ul>
+                        <button class="sidebar-button full-width" onclick="window.open('expediente.html', '_blank');">Ver expediente completo</button>
+                    </div>
+                    <div class="sidebar-section">
+                        <h4>Acciones</h4>
+                        <button class="sidebar-button full-width">Imprimir comprobante</button>
+                        <button class="sidebar-button full-width disabled">Firmar</button>
+                        <select class="sidebar-button full-width">
+                            <option>Adjuntar PDF</option>
+                        </select>
+                        <select class="sidebar-button full-width">
+                            <option>Enviar a</option>
+                        </select>
+                    </div>
+                </aside>
+            </div>
 
                 <div class="form-section">
-                    <h3 class="section-title"><span class="icon">&#x1F3E2;</span> Datos de la Unidad Educativa</h3>
-                    <div class="card">
-                        <p><strong>Establecimiento:</strong> ESCUELA TEC. CAP. LAB MADRES SANJUANINAS <span class="sector">Sector N° 503</span></p>
-                        <p><strong>Nivel:</strong> No Formal</p>
-                        <p><strong>Modalidad:</strong> Capacitación Laboral</p>
-                        <p><strong>CUE:</strong> 700072300</p>
-                        <p><strong>Radio:</strong> 2</p>
-                        <p><strong>Domicilio:</strong> Raúl Cuello 4569 (E)</p>
-                        <p><strong>Localidad:</strong> Barrio Balcarce, Santa Lucía, San Juan</p>
-                    </div>
+
+                    <!-- Se eliminó la sección duplicada de Datos de la designación -->
                 </div>
 
-                <div class="form-section">
-                    <h3 class="section-title"><span class="icon">&#x1F4C1;</span> Datos de la designación</h3>
-                    <div class="card">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>CUPOF</th>
-                                    <th>Descripción del cargo</th>
-                                    <th>Categoría</th>
-                                    <th>En reemplazo de: Agentes</th>
-                                    <th>S. de revistas</th>
-                                    <th>Motivo</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>700072300-MPI-10082410393962</td>
-                                    <td>Maestro de Enseñanza Práctica - Escuelas Técnicas de Capacitación Laboral - INGLES Turno: VESPERTINO</td>
-                                    <td>125</td>
-                                    <td>MERINO, NDIA LUCY<br>Género: Femenino<br>DU: 17078997</td>
-                                    <td>TITULAR</td>
-                                    <td>BAJA POR JUBILACION originada por EXPEDIENTE 300-005787-2023-EXP, la cual se adjunta</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <!-- DNI Section debajo de Motivo Designación -->
+                </div>
+
+                <!-- CUIL Section debajo de DNI -->
                 </div>
 
                 <div class="form-section">
@@ -100,6 +152,7 @@
                 <a href="index.html" class="back-link">&larr; Volver</a>
 
                 <div class="form-section">
+
                     <h3 class="section-title">Seguimiento del expediente</h3>
                     <div class="timeline">
                         <div class="step completed">Creación de designación</div>
@@ -114,6 +167,9 @@
                         <!-- More steps as needed -->
                     </div>
                 </div>
+
+                <!-- DNI Section -->
+
 
                 <div class="form-section">
                     <h3 class="section-title">Historial</h3>
@@ -134,32 +190,32 @@
                             <p><strong>12/06/2025</strong> <strong>Enviado a bandeja de entrada</strong></p>
                             <p>Falta documentación</p>
                         </div>
+                        </div>
                     </div>
-                </div>
-
             </main>
             <aside class="right-sidebar">
-                <div class="sidebar-section">
+                <!-- <div class="sidebar-section">
                     <h4>Ver documentos</h4>
                     <ul>
                         <li><a href="solicitud.html" target="_blank">Solicitud de designación</a></li>
                         <li><a href="llamado.html" target="_blank">Llamado de prensa</a></li>
-                                                <li><a href="ofrecimiento.html" target="_blank">Acto de Ofrecimiento</a></li>
+                        <li><a href="ofrecimiento.html" target="_blank">Acto de Ofrecimiento</a></li>
                         <li><a href="instancia_titulo.html" target="_blank">Instancia de Título</a></li>
                         <li><a href="declaracion_jurada.html" target="_blank">Declaración Jurada</a></li>
                         <li><a href="motivo_designacion.html" target="_blank">Motivo Designación</a></li>
+                        <li><a href="#" class="modal-btn" onclick="openModal('dniModal')">DNI</a></li>
+                        <li><a href="#" class="modal-btn" onclick="openModal('cuilModal')">CUIL</a></li>
                     </ul>
-                </section>
-                <section class="document-section">
-                        <li><a href="#">Declaración Jurada</a></li>
-                        <li><a href="#">Motivo de designación</a></li>
+                </div> -->
+                <!-- <div class="sidebar-section">
+                    <ul>
                         <li><a href="#">Copia del DNI</a></li>
                         <li><a href="#">Constancia Cuil</a></li>
                         <li><a href="#">Constancia CBU</a></li>
                         <li><a href="#">Notificación Circular Impuesto a las Ganancias</a></li>
                     </ul>
                     <button class="sidebar-button full-width" onclick="window.open('expediente.html', '_blank');">Ver expediente completo</button>
-                </div>
+                </div> -->
                 <div class="sidebar-section">
                     <h4>Acciones</h4>
                     <button class="sidebar-button full-width">Imprimir comprobante</button>
@@ -175,5 +231,109 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <!-- Modal para documentos principales -->
+    <div id="docModal" class="modal">
+        <div class="modal-content" style="max-width:900px;">
+            <span class="close" onclick="closeModal('docModal')">&times;</span>
+            <h2 id="docModalTitle"></h2>
+            <iframe id="docModalFrame" src="" style="width:100%;height:70vh;border:none;"></iframe>
+        </div>
+    </div>
+    <script>
+    function openDocModal(url, title) {
+        document.getElementById('docModalFrame').src = url;
+        document.getElementById('docModalTitle').innerText = title;
+        document.getElementById('docModal').style.display = 'block';
+    }
+    </script>
+    <!-- Modales para DNI y CUIL -->
+    <div id="dniModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('dniModal')">&times;</span>
+            <img src="img/dniFrente.jpeg" alt="DNI Frente" style="max-width:320px; margin:10px; border:1px solid #ccc; border-radius:8px;">
+            <img src="img/dniReverso.jpeg" alt="DNI Reverso" style="max-width:320px; margin:10px; border:1px solid #ccc; border-radius:8px;">
+        </div>
+    </div>
+    <div id="cuilModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('cuilModal')">&times;</span>
+            <img src="img/cuil.png" alt="Constancia de CUIL" style="max-width:320px; margin:10px; border:1px solid #ccc; border-radius:8px;">
+        </div>
+    </div>
+    <!-- Modal para CBU -->
+    <div id="cbuModal" class="modal">
+        <div class="modal-content" style="max-width:900px;">
+            <span class="close" onclick="closeModal('cbuModal')">&times;</span>
+            <img src="img/cbu.png" alt="CBU" style="max-width:850px; width:100%; margin:10px; border:1px solid #ccc; border-radius:8px;">
+        </div>
+    </div>
+    <style>
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.5);
+    }
+    .modal-content {
+        background-color: #fff;
+        margin: 5% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 90%;
+        max-width: 500px;
+        text-align: center;
+        border-radius: 10px;
+        position: relative;
+    }
+    .close {
+        color: #aaa;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .modal-btn {
+        padding: 8px 18px;
+        background: #1976d2;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+    .modal-btn:hover {
+        background: #1565c0;
+    }
+    </style>
+
+    <script>
+    function openModal(id) {
+        document.getElementById(id).style.display = 'block';
+    }
+    function closeModal(id) {
+        document.getElementById(id).style.display = 'none';
+    }
+    window.onclick = function(event) {
+        var modals = document.getElementsByClassName('modal');
+        for (var i = 0; i < modals.length; i++) {
+            if (event.target == modals[i]) {
+                modals[i].style.display = "none";
+            }
+        }
+    }
+    </script>
 </body>
 </html>

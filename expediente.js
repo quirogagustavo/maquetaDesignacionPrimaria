@@ -19,7 +19,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Actualizar el contador
-        pageCounter.textContent = `Foja ${currentPage + 1} de ${totalPages}`;
+        if (currentPage === 0) {
+            pageCounter.textContent = 'Caratula';
+        } else {
+            pageCounter.textContent = `Foja ${currentPage} de ${totalPages - 1}`;
+        }
 
         // Habilitar/deshabilitar botones
         prevButton.disabled = (currentPage === 0);
