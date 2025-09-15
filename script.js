@@ -33,12 +33,13 @@ document.addEventListener('DOMContentLoaded', function() {
         if (loginForm) {
             loginForm.addEventListener('submit', function(e) {
                 e.preventDefault();
+                    console.log('Evento submit ejecutado');
                 var usuario = document.getElementById('usuario').value;
-                if (usuario === 'interinatos') {
-                    window.location.href = 'index.html';
-                } else if (usuario === 'personaldocente') {
-                    window.location.href = 'personalDocente.html';
-                }
+                    if (usuario === 'interinatos') {
+                        window.location.href = 'actosOfrecimiento.html';
+                    } else if (usuario === 'personaldocente') {
+                        window.location.href = 'personalDocente.html';
+                    }
             });
         }
 });

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Interinatos - Ministerio de Educación</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="expediente.css">
+    <link rel="stylesheet" href="detalle.css">
+    <link rel="stylesheet" href="aspirantes.css">
+    <style>
+        body { background: #fff; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 24px; }
+        .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+        .logo { display: flex; align-items: center; }
+        .logo img { height: 48px; margin-right: 16px; }
+        .user { font-weight: bold; color: #e68900; }
+        .section-title { background: #ff9800; color: #fff; padding: 8px 16px; border-radius: 6px 6px 0 0; font-size: 1.1em; margin-bottom: 0; }
+        .section { background: #fff3e0; border: 2px solid #ff9800; border-radius: 8px; margin-bottom: 18px; box-shadow: 0 2px 8px rgba(255,152,0,0.10); }
+        .section-content { padding: 16px; }
+        .section-table { width: 100%; border-collapse: collapse; margin-bottom: 8px; }
+        .section-table th, .section-table td { border: 1px solid #ff9800; padding: 8px; text-align: left; }
+        .section-table th { background: #ffe0b2; color: #e68900; }
+        .sidebar { float: right; width: 300px; margin-left: 24px; }
+        .sidebar-section { background: #fff3e0; border: 2px solid #ff9800; border-radius: 8px; margin-bottom: 18px; }
+        .sidebar-title { background: #ff9800; color: #fff; padding: 8px 16px; border-radius: 6px 6px 0 0; font-size: 1.1em; }
+        .sidebar-content { padding: 12px; }
+        .sidebar-content a, .sidebar-content button { display: block; margin-bottom: 8px; color: #e68900; text-decoration: none; font-weight: bold; background: none; border: none; cursor: pointer; text-align: left; }
+        .sidebar-content .btn { background: #ff9800; color: #fff; border-radius: 20px; padding: 8px 16px; margin-bottom: 8px; border: none; cursor: pointer; font-size: 1em; }
+        .sidebar-content .btn:disabled { background: #ccc; color: #fff; }
+        .sidebar-content .dropdown { width: 100%; margin-bottom: 8px; }
+        .timeline { display: flex; align-items: center; margin: 32px 0 16px 0; }
+        .timeline-step { display: flex; flex-direction: column; align-items: center; margin-right: 24px; }
+        .timeline-step .circle { width: 28px; height: 28px; border-radius: 50%; background: #fff; border: 2px solid #ff9800; display: flex; align-items: center; justify-content: center; color: #ff9800; font-weight: bold; margin-bottom: 4px; }
+        .timeline-step.active .circle { background: #ff9800; color: #fff; }
+        .timeline-step .label { font-size: 0.85em; color: #e68900; text-align: center; }
+        .history { margin-top: 16px; }
+        .history-entry { margin-bottom: 12px; }
+        .back-link { color: #ff9800; font-weight: bold; text-decoration: none; display: inline-block; margin-top: 24px; }
+        @media (max-width: 900px) {
+            .container { padding: 8px; }
+            .sidebar { float: none; width: 100%; margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="img/designacionPrimaria.png" alt="Logo San Juan">
+                <div>
+                    <strong>San Juan</strong> <br>
+                    Ministerio de <span style="color:#e68900">Educación</span>
+                </div>
+            </div>
+            <div class="user">¡Hola! Nombre</div>
+        </div>
+        <h2>Acto</h2>
+        <div class="sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-title">Ver documentos</div>
+                <div class="sidebar-content">
+                    <a href="#">Solicitud de designación</a>
+                    <a href="#">Llamado de prensa</a>
+                    <a href="#">Acto de ofrecimiento</a>
+                    <a href="#">Declaración Jurada</a>
+                    <a href="#">Motivo de designación</a>
+                    <a href="#">Copia del DNI</a>
+                    <a href="#">Constancia Cuil</a>
+                    <a href="#">Constancia CBU</a>
+                    <a href="#">Notificación Circular Impuesto a las Ganancias</a>
+                    <button class="btn">Ver expediente completo</button>
+                </div>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-title">Acciones</div>
+                <div class="sidebar-content">
+                    <button class="btn">Imprimir comprobante</button>
+                    <button class="btn" disabled>Firmar</button>
+                    <select class="dropdown">
+                        <option>Adjuntar PDF</option>
+                    </select>
+                    <select class="dropdown">
+                        <option>Enviar a</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">Datos de la Unidad Educativa</div>
+            <div class="section-content">
+                <strong>Establecimiento:</strong> ESCUELA TEC. CAP. LAB MADRES SANJUANINAS<br>
+                <strong>Sector N°:</strong> 503<br>
+                Nivel: No formal.<br>
+                Modalidad: Capacitación Laboral.<br>
+                CUE: 700072300<br>
+                Radice: 2<br>
+                Domicilio: Raúl Capillo 4569 (E)<br>
+                Localidad: Barrio Baltarce, Santa Lucía, San Juan
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">Datos de la designación</div>
+            <div class="section-content">
+                <table class="section-table">
+                    <tr>
+                        <th>CUPOF</th>
+                        <th>Descripción del cargo</th>
+                        <th>Categoría</th>
+                        <th>En reemplazo de Agentes</th>
+                        <th>S. de revistas</th>
+                        <th>Motivo</th>
+                    </tr>
+                    <tr>
+                        <td>700072300-MP-10084103193962</td>
+                        <td>Maestro de Enseñanza Práctica - Escuela Técnica de Capacitación Laboral - INGLÉS TURNO: VESPERTINO</td>
+                        <td>125</td>
+                        <td>MERINO, INDA LUCY<br>Cárdenas, Fernanda<br>TITULAR<br>DNI 17078997</td>
+                        <td></td>
+                        <td>BAJA POR JUBILACIÓN originado por EXPEDIENTE 309-0699-2021. EXP. Le cual se adjunta</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">Datos del agente</div>
+            <div class="section-content">
+                Nombre: xxxxx xxxxx xxxxxxx<br>
+                Nivel: No formal.<br>
+                Modalidad: Capacitación Laboral.<br>
+                CUE: 700072300<br>
+                Radice: 2<br>
+                Domicilio: Raúl Capillo 4569 (E)<br>
+                Localidad: Barrio Baltarce, Santa Lucía, San Juan
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">Validaciones</div>
+            <div class="section-content">
+                <input type="text" value="20-235487-8" style="width:180px;"> <input type="text" value="Castro, Juan Manuel" style="width:220px;"> <button class="btn">Validar CIDI</button><br><br>
+                <select style="width:180px;">
+                    <option>CBU</option>
+                </select>
+                <button class="btn">Adjuntar CBU</button>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">Firmas y visto bueno</div>
+            <div class="section-content" style="height:80px;">
+                <div style="margin-top:32px; text-align:center;">
+                    <div style="margin-bottom:8px;">-----------------------------</div>
+                    <div>Firma Coordinador UGDA</div>
+                </div>
+            </div>
+        </div>
+        <div class="timeline">
+            <div class="timeline-step active">
+                <div class="circle">✓</div>
+                <div class="label">Creación de designación</div>
+            </div>
+            <div class="timeline-step active">
+                <div class="circle">✓</div>
+                <div class="label">Unidad educativa</div>
+            </div>
+            <div class="timeline-step active">
+                <div class="circle">✓</div>
+                <div class="label">Comisión J y S (UGDA)</div>
+            </div>
+            <div class="timeline-step active">
+                <div class="circle">✓</div>
+                <div class="label">Interinatos y suplencias</div>
+            </div>
+            <div class="timeline-step active">
+                <div class="circle">✓</div>
+                <div class="label">Personal Docente</div>
+            </div>
+            <div class="timeline-step">
+                <div class="circle">✓</div>
+                <div class="label">Contable</div>
+            </div>
+            <div class="timeline-step">
+                <div class="circle">✓</div>
+                <div class="label">Delegación Fiscal</div>
+            </div>
+            <div class="timeline-step">
+                <div class="circle">✓</div>
+                <div class="label">Sueldos</div>
+            </div>
+            <div class="timeline-step">
+                <div class="circle">✓</div>
+                <div class="label">Despacho</div>
+            </div>
+            <div class="timeline-step">
+                <div class="circle">✓</div>
+                <div class="label">Asesoría Letrada</div>
+            </div>
+            <div class="timeline-step">
+                <div class="circle">✓</div>
+                <div class="label">Oficina Auxiliar Superior</div>
+            </div>
+            <div class="timeline-step">
+                <div class="circle">✓</div>
+                <div class="label">Fin de designación</div>
+            </div>
+        </div>
+        <div class="history">
+            <div class="history-entry">
+                <strong>12/06/2025</strong> Ingreso a bandeja de entrada<br>
+                Enviado a Unidad educativa
+            </div>
+            <div class="history-entry">
+                <strong>12/06/2025</strong> Unidad educativa<br>
+                Control de documentación
+            </div>
+            <div class="history-entry">
+                <strong>12/06/2025</strong> Responsable Interinatos y suplencias<br>
+                Firma del acto
+            </div>
+            <div class="history-entry">
+                <strong>12/06/2025</strong> Enviado a bandeja de entrada<br>
+                Falta documentación
+            </div>
+        </div>
+        <a href="#" class="back-link">← Volver</a>
+    </div>
+</body>
+</html>

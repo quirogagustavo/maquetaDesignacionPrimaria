@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bandeja de entrada: Designación docente</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #fafafa; }
+        .sidebar {
+            background: #ff9800;
+            color: #fff;
+            width: 220px;
+            min-height: 100vh;
+            float: left;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 24px 0 0 0;
+        }
+        .sidebar .logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 32px;
+            margin-left: 16px;
+        }
+        .sidebar .logo img {
+            height: 48px;
+            margin-right: 12px;
+        }
+        .sidebar .menu {
+            width: 100%;
+            margin-bottom: 32px;
+        }
+        .sidebar .menu-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 24px;
+            font-size: 1em;
+            color: #fff;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+        }
+        .sidebar .menu-item:hover {
+            background: #e68900;
+        }
+        .sidebar .logout {
+            margin-top: auto;
+            padding: 24px;
+            font-weight: bold;
+            color: #fff;
+            cursor: pointer;
+        }
+        .main {
+            margin-left: 220px;
+            padding: 32px 40px;
+        }
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        .topbar .user {
+            color: #ff9800;
+            font-weight: bold;
+            border: 1px solid #ff9800;
+            border-radius: 8px;
+            padding: 4px 16px;
+            background: #fff;
+        }
+        .main-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 24px;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+        .search-bar input {
+            width: 320px;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+            margin-right: 12px;
+        }
+        .search-bar button {
+            background: #ff9800;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 32px;
+            font-size: 1em;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .table-container {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 0 0 24px 0;
+            margin-bottom: 32px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 0;
+        }
+        th, td {
+            padding: 14px 10px;
+            text-align: left;
+        }
+        th {
+            background: #f5f5f5;
+            color: #ff9800;
+            font-weight: bold;
+            border-bottom: 2px solid #ff9800;
+        }
+        td {
+            border-bottom: 1px solid #eee;
+            color: #333;
+            vertical-align: top;
+        }
+        .btn-doc {
+            background: #fff;
+            color: #ff9800;
+            border: 2px solid #ff9800;
+            border-radius: 8px;
+            padding: 8px 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+        .btn-doc:hover {
+            background: #ff9800;
+            color: #fff;
+        }
+        .info {
+            text-align: center;
+            color: #888;
+            margin-top: 48px;
+        }
+        @media (max-width: 900px) {
+            .main { margin-left: 0; padding: 16px; }
+            .sidebar { width: 100%; min-height: 0; float: none; padding: 8px 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <!-- <img src="img/designacionPrimaria.png" alt="Logo San Juan"> -->
+                    <!-- <tr>
+                        <td>1234</td>
+                        <td>12/6/2024</td>
+                        <td>Castro, Juan Manuel</td>
+                        <td>123456789</td>
+                        <td>Maestro de Enseñanza Práctica - Escuelas Técnicas de Capacitación Laboral - INGLES Turno: VESPERTINO <button class="btn-doc" onclick="window.location.href='detalle.html'">Ver documentación</button></td>
+                        <td>Escuelas Técnicas de Capacitación Laboral</td>
+                        <td></td>
+                    </tr> -->
+            <!-- <button class="menu-item">✦ xxxxxxxxxxxxxxxx</button>
+            <button class="menu-item">✦ xxxxxxxx ▼</button>
+            <button class="menu-item">✦ xxxxxxxx ▼</button> -->
+        </div>
+        <div class="logout">← Cerrar sesión</div>
+    </div>
+    <div class="main">
+        <div class="topbar">
+            <div></div>
+            <div class="user">¡Hola! Nombre</div>
+        </div>
+        <div class="main-title">Bandeja de entrada: Designación docente</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar">
+            <button>Buscar</button>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>N°de acto</th>
+                        <th>Fecha</th>
+                        <th>Nombre del docente</th>
+                        <th>DNI</th>
+                        <th>Cargo</th>
+                        <th>Escuela</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1234</td>
+                        <td>12/6/2024</td>
+                        <td>Castro, Juan Manuel</td>
+                        <td>123456789</td>
+                        <td>Maestro de Enseñanza Práctica - Escuelas Técnicas de Capacitación Laboral - INGLES Turno: VESPERTINO</td>
+                        <td>Escuelas Técnicas de Capacitación Laboral</td>
+                        <!-- <td><button class="btn-doc">Ver documentación</button></td> -->
+    <td><button class="btn-doc" onclick="window.location.href='detalle.html'">Ver documentación</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- <div class="info">Numero de expediente, fecha, docente designado</div> -->
+    </div>
+</body>
+</html>
