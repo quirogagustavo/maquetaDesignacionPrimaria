@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (usuario === 'interinatos') {
                         window.location.href = 'actosOfrecimiento.html';
                     } else if (usuario === 'personaldocente') {
-                        window.location.href = 'personalDocente.html';
+                        window.location.href = 'bandejaExpedientes.html';
                     }
             });
         }

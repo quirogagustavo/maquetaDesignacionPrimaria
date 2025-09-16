@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Bandeja de entrada: Designación docente</title>
+    <title>Bandeja de entrada</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #fafafa; }
@@ -59,7 +59,7 @@
         }
         .topbar {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
             margin-bottom: 24px;
         }
@@ -154,28 +154,27 @@
 <body>
     <div class="sidebar">
         <div class="logo">
-            <!-- <img src="img/designacionPrimaria.png" alt="Logo San Juan"> -->
-                    <!-- <tr>
-                        <td>1234</td>
-                        <td>12/6/2024</td>
-                        <td>Castro, Juan Manuel</td>
-                        <td>123456789</td>
-                        <td>Maestro de Enseñanza Práctica - Escuelas Técnicas de Capacitación Laboral - INGLES Turno: VESPERTINO <button class="btn-doc" onclick="window.location.href='detalle.html'">Ver documentación</button></td>
-                        <td>Escuelas Técnicas de Capacitación Laboral</td>
-                        <td></td>
-                    </tr> -->
-            <!-- <button class="menu-item">✦ xxxxxxxxxxxxxxxx</button>
+            <img src="img/designacionPrimaria.png" alt="Logo San Juan">
+            <div>
+                <strong>San Juan</strong><br>
+                Ministerio de <span style="color:#fff">Educación</span>
+            </div>
+        </div>
+        <div class="menu">
+            <button class="menu-item">✦ xxxxxx</button>
+            <button class="menu-item">✦ xxxxxxxxxxxxxx</button>
+            <button class="menu-item">✦ xxxxxxxxxxxxxxx</button>
+            <button class="menu-item">✦ xxxxxxxxxxxxxxxx</button>
             <button class="menu-item">✦ xxxxxxxx ▼</button>
-            <button class="menu-item">✦ xxxxxxxx ▼</button> -->
+            <button class="menu-item">✦ xxxxxxxx ▼</button>
         </div>
         <div class="logout">← Cerrar sesión</div>
     </div>
     <div class="main">
         <div class="topbar">
-            <div></div>
             <div class="user">¡Hola! Nombre</div>
         </div>
-        <div class="main-title">Bandeja de entrada: Designación docente</div>
+        <div class="main-title">Bandeja de entrada</div>
         <div class="search-bar">
             <input type="text" placeholder="Buscar">
             <button>Buscar</button>
@@ -184,12 +183,10 @@
             <table>
                 <thead>
                     <tr>
-                        <th>N°de acto</th>
-                        <th>Fecha</th>
+                        <th>N° de expediente</th>
+                        <th>Fecha de inicio de expediente</th>
+                        <th>Fecha de ingreso a oficina</th>
                         <th>Nombre del docente</th>
-                        <th>DNI</th>
-                        <th>Cargo</th>
-                        <th>Escuela</th>
                         <th>Acción</th>
                     </tr>
                 </thead>
@@ -197,16 +194,14 @@
                     <tr>
                         <td>1234</td>
                         <td>12/6/2024</td>
+                        <td>12/6/2024</td>
                         <td>Castro, Juan Manuel</td>
-                        <td>123456789</td>
-                        <td>Maestro de Enseñanza Práctica - Escuelas Técnicas de Capacitación Laboral - INGLES Turno: VESPERTINO</td>
-                        <td>Escuelas Técnicas de Capacitación Laboral</td>
-                        <td><button class="btn-doc" onclick="window.location.href='detalle.html'">Ver documentación</button></td>
+                        <td><button class="btn-doc" onclick="window.location.href='personalDocente.html'">Ver documentación</button></td>
                     </tr>
                 </tbody>
             </table>
         </div>
-    <div class="info">Numero de expediente, fecha, docente designado</div>
+        <div class="info">Numero de expediente, fecha, docente designado</div>
     </div>
 </body>
 </html>
